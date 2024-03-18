@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logoDiv">
+            </div>
+            <div class="search_homeDiv">
+                <section id="uhr-container">
+                    <div class="hours-box">
+                        <p class="text">Hours</p>
+                        <p id="hours"></p>
+                    </div>
+                    <div class="min-box">
+                        <p class="text">Minutes</p>
+                        <p id="min"></p>
+                    </div>
+                    <div class="sec-box">
+                        <p class="text">Seconds</p>
+                        <p id="sec"></p>
+                    </div>
+                    <div id="h1" class="am-box"></div>
+                </section>
+                <div id="datum-container">
+                    <h3 id="day"></h3>
+                    <h3 id="month"></h3>
+                    <h3 id="date"></h3>
+                    <h3 id="year"></h3>
+                </div>
+                <h2></h2>
+            </div>
+        </nav>
+    </header>
+    <section class="mittel_container">
+        <aside>
+            <div class="aside_o">
+                <!------------------ ofcanvas --------------->
+                <button id="call_rezept" onclick="" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Die beliebstesten Rezepten</button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="burek_details">
+                        <h3>Burek:</h3>
+                        <ul class="burek_ul"></ul>
+                    </div>
+                    <div class="kafteji_details">
+                        <h3>Kafteji:</h3>
+                        <ul class="kafteji_ul"></ul>
+                    </div>
+                    <div class="shawarma_details">
+                        <h3>Shawarma:</h3>
+                        <ul class="shawarma_ul"></ul>
+                    </div>
+                  </div>
+                </div>
+                <!----------------------------------------------------------------->
+            </div>
+            <div class="aside_u"></div>
+            <hr style="width: 90%; padding: 4px;">
+            <div class="aside_dessert"></div>
+        </aside>
+        <main>
+            <div class="main_o"></div>
+            <div class="main_m"></div>
+            <div class="main_u"></div>
+        </main>
+    </section>
+    <section class="mainUnterTeil"></section>
+    <footer></footer>
+
+    <script src="src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+</body>
+</html>
